@@ -2,7 +2,10 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
+
 $(document).ready(function () {
+
+   /*
   // detect OS/browser preference
   const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
@@ -45,7 +48,7 @@ $(document).ready(function () {
   };
 
   $('#theme-toggle').on('click', toggleTheme);
-
+*/
   // These should be the same as the settings in _variables.scss
   const scssLarge = 925; // pixels
 

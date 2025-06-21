@@ -22,10 +22,10 @@ repository               : "lillykormann/lillykormann.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profilelk.png"
   name             : "Lilly Kormann"
   pronouns         : "she/her"  
-  bio              : #"final year master student"
+  bio              : "final year master student"
   location         : "Vienna"
   employer         : "University of Vienna"
   uri              : # URL

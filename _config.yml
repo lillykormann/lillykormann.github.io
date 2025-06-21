@@ -26,7 +26,7 @@ author:
   name             : "Lilly Kormann"
   pronouns         : "she/her"  
   bio              : "final year master student"
-  location         : "Vienna"
+  location         : # "Vienna"
   employer         : "University of Vienna"
   uri              : # URL
   email            : #"none@example.org" 

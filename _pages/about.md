@@ -1,9 +1,10 @@
 ---
 permalink: /
-title: ""
+title: "Hello!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+I am a final-year Master's student in Astrophysics at University of Vienna, currently working on identifying and characterizing large-scale structures in the solar neighborhood using 3D dust maps.

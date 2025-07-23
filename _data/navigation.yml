@@ -10,7 +10,6 @@
 main:
 
   - title: "&nbsp;&nbsp;&nbsp;"  
-    url: "#"
     
   - title: "Research"
     url: /research/

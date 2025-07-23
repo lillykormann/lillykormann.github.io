@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-Superclouds of the Local Milky Way
+<h3>Superclouds of the Local Milky Way</h3>
 ======
 
 **[The Superclouds of the Local Milky Way ](https://lillykormann.github.io/superclouds_figures/)**  

@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "light"
-title                    : "About"
+title                    : "Lilly Kormann"
 title_separator          : "-"
 name                     : &name "Lilly Kormann"
 description              : &description "personal description"
@@ -25,9 +25,9 @@ author:
   avatar           : "profilelk_bw_sq.png" #"profilelk_bw.png"
   name             : "Lilly Kormann"
   pronouns         : "she/her"  
-  bio              : # "final year master student"
+  bio              : "University of Vienna"
   location         : # "Vienna"
-  employer         : "University of Vienna"
+  employer         : # "University of Vienna"
   uri              : # URL
   email            : #"none@example.org" 
 

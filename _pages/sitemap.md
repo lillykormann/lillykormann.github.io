@@ -1,14 +1,26 @@
 ---
 layout: archive
-title: "Sitemap"
+title: "Author Information"
 permalink: /sitemap/
 author_profile: true
 ---
 
-{% include base_path %}
+{{% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+<ul>
+  {% if site.author.employer %}
+  <li><strong>Affiliation:</strong> {{ site.author.employer }}</li>
+  {% endif %}
 
-Pages
-======
-{% for post in site.pages %} {% include archive-single.html %} {% endfor %}
+  {% if site.author.email %}
+  <li><strong>Email:</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+  {% endif %}
+
+  {% if site.author.orcid %}
+  <li><strong>ORCID:</strong> <a href="{{ site.author.orcid }}" target="_blank">{{ site.author.orcid }}</a></li>
+  {% endif %}
+
+  {% if site.author.nasaads %}
+  <li><strong>ADS:</strong> <a href="{{ site.author.nasaads }}" target="_blank">NASA ADS Profile</a></li>
+  {% endif %}
+</ul>

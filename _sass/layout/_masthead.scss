@@ -68,10 +68,10 @@
 
 /* Push theme toggle to the right */
 .greedy-nav .visible-links {
-  display: flex;
+  display: flex !important;
   align-items: center;
+  width: 100%;
 }
-
 .masthead__menu-item.persist.tail {
-  margin-left: auto;
+  margin-left: auto !important;
 }

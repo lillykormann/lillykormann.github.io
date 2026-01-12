@@ -54,44 +54,13 @@
     font-weight: 700;
   }
 }
-.masthead__menu-item.selected a {
-  color: var(--global-text-color);
-  font-weight: 700;
-  border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none;
-  cursor: default;
-}
-.masthead__menu-item.selected a:hover {
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-text-color);
-}
 
-/* Force layout: Name on left, Research aligned with content, theme toggle on right */
-.greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center;
-  width: 100%;
-}
-
-/* Keep your name in its position */
-.masthead__menu-item--lg.persist {
-  flex-shrink: 0;
-}
-
-/* Research and other nav items: no extra margin */
-.greedy-nav .visible-links li:not(.masthead__menu-item--lg):not(.tail) {
-  margin-left: 0 !important;
-  flex-shrink: 0;
-}
-
-/* Push theme toggle all the way to the right */
+/* Push theme toggle to the right */
 .masthead__menu-item.persist.tail {
   margin-left: auto !important;
 }
 
-/* For mobile responsiveness */
-@media (max-width: 768px) {
-  .greedy-nav .visible-links {
-    flex-wrap: wrap;
-  }
+.greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center;
 }

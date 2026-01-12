@@ -65,3 +65,13 @@
     font-weight: 700;
   }
 }
+
+/* Push theme toggle to the right */
+.greedy-nav .visible-links {
+  display: flex;
+  align-items: center;
+}
+
+.masthead__menu-item.persist.tail {
+  margin-left: auto;
+}

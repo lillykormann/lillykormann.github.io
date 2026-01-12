@@ -1,20 +1,17 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
-
 .masthead {
   position: fixed;
   background: var(--global-bg-color);
   height: fit-content;
   top: 0;
   width: 100%;
-
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
-
   &::after {
     content: "";
     position: absolute;
@@ -23,29 +20,23 @@
     background: var(--global-border-color);
     width: 100%;
   }
-
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
-
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
-
     nav {
       z-index: 10;
     }
-
     a {
       text-decoration: none;
     }
   }
 }
-
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -53,15 +44,54 @@
     list-style-type: none;
   }
 }
-
 .masthead__menu-item {
   background-color: var(--global-bg-color);
   display: block;
   list-style-type: none;
   white-space: nowrap;
-
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+  }
+}
+.masthead__menu-item.selected a {
+  color: var(--global-text-color);
+  font-weight: 700;
+  border-bottom: 2px solid var(--global-text-color);
+  pointer-events: none;
+  cursor: default;
+}
+.masthead__menu-item.selected a:hover {
+  color: var(--global-text-color);
+  border-bottom: 2px solid var(--global-text-color);
+}
+
+/* Force layout: Name on left, Research aligned with content, theme toggle on right */
+.greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+}
+
+/* Keep your name in its position */
+.masthead__menu-item--lg.persist {
+  flex-shrink: 0;
+}
+
+/* Research and other nav items: no extra margin */
+.greedy-nav .visible-links li:not(.masthead__menu-item--lg):not(.tail) {
+  margin-left: 0 !important;
+  flex-shrink: 0;
+}
+
+/* Push theme toggle all the way to the right */
+.masthead__menu-item.persist.tail {
+  margin-left: auto !important;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    flex-wrap: wrap;
   }
 }

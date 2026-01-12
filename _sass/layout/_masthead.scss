@@ -69,11 +69,19 @@
 /* Push theme toggle to the right - desktop only - fighting the hamburger toggle */
 @media (min-width: 769px) {
   .greedy-nav .visible-links {
-    display: flex !important;
+    display: flex;
     align-items: center;
-    width: 100%;
   }
+  /* theme toggle to the far right */
   .masthead__menu-item.persist.tail {
-    margin-left: auto !important;
+    margin-left: auto;
+  }
+  /* completely hide that forsaken hamburger toggle */
+  .greedy-nav__toggle {
+    display: none !important;
+  }
+  /* prevent greedy-nav from triggering overflow logic which invites the hamburger in */
+  .greedy-nav {
+    overflow: visible;
   }
 }

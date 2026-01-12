@@ -68,15 +68,25 @@
 
 /* Push theme toggle to the right - desktop only - fighting the hamburger toggle */
 @media (min-width: 769px) {
-  .greedy-nav .visible-links {
+  .masthead__menu nav.greedy-nav {
     display: flex;
     align-items: center;
+    width: 100%
   }
+  /* force visible-links to fill remaining space like doing this is forcing me to cry */
+  .masthead__menu .visible-links {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
   /* theme toggle to the far right */
   .masthead__menu-item.persist.tail {
     margin-left: auto;
   }
   /* completely hide that forsaken hamburger toggle */
+  .greedy-nav > .navicon,
   .greedy-nav__toggle {
     display: none !important;
   }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <title>Lilly Kormann</title>
+  <meta name="author" content="Lilly A. Kormann" />
+  
+  <link rel="icon" type="image/png" href="images/star_32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- latex -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+  <main>
+
+    <!-- no more need to insert nav as I moved it to nav.js -->
+
+    <div class="profile-section">
+      <div class="profile-left">
+        <img src="images/profilelk_bw_sq.png" alt="Lilly A. Kormann" class="profile-image">
+        
+        <div class="profile-details">
+          <div class="pronouns">she/her</div>
+          <div class="affiliation">
+            <i class="fa-solid fa-building-columns"></i>University of Vienna
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:lilly.kormann@univie.ac.at">lilly.kormann@univie.ac.at</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-fw fa-rocket"></i>
+            <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=author%3A%22kormann%2C%20lilly%20a%22%20year%3A2025-&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">ADS</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-fw fa-orcid"></i>
+            <a href="https://orcid.org/0009-0009-2174-5363" target="_blank">ORCID</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="profile-info">
+        <p>
+          I am a first year PhD student in Astrophysics at the University of Vienna, currently working on identifying and 
+          characterizing large-scale structures in the solar neighborhood using 3D dust maps.
+        </p>
+
+        <p>
+          On the side, I am an editor for the Star Formation Newsletter. If you are interested in star formation, would 
+          like to recieve the newsletter monthly, or want to submit an abstract, feel free to visit us 
+          at <a href="https://starformationnews.org" target="_blank">starformationnews.org</a>!
+        </p>
+      </div>
+    </div>
+    
+    <section id="research">
+      <a href="research.html" ><h2>Recent Research</h2></a>
+      
+      <div class="publication">
+        <div class="publication-title">
+          <!-- class="link-animated" after href if wanted -->
+          <a href="https://arxiv.org/abs/2507.14883" target="_blank">The Superclouds of the Local Milky Way</a>
+        </div>
+        <div class="publication-authors">Kormann et al. (2025), accepted for publication in A&A</div>
+        <div class="publication-text">
+            <p> 
+              Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel 
+              structures in the local \(\sim\)5 kpc\(^2\), five of which were previously unknown. These findings establish a new framework for 
+              understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and 
+              likely in galaxies like the Milky Way.
+            </p>
+
+            <p>
+              Interactive figures are available for the 
+              <a href="research.html#hop-clouds">HOP clouds</a>, as well as the
+              <a href="research.html#superclouds">superclouds</a>.
+            </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- no more need to insert footer as I moved it to footer.js -->
+     
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/theme-toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Lilly Kormann - Research</title>
+  <meta name="author" content="Lilly A. Kormann" />
+  
+  <link rel="icon" type="image/png" href="images/star_32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- latex -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+  <main>
+
+    <!-- no more need to insert nav as I moved it to nav.js -->
+    
+    <article>
+      <h3><a href="https://arxiv.org/abs/2507.14883" target="_blank">The Superclouds of the Local Milky Way</a></h3>
+      <div class="publication-authors">Kormann et al. (2025), accepted for publication in A&A</div>
+
+      <p> 
+        Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel 
+        structures in the local \(\sim\)5 kpc\(^2\), five of which were previously unknown. These findings establish a new framework for 
+        understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and 
+        likely in galaxies like the Milky Way.
+      </p>
+      
+      <section>
+        <h4>Interactive Figures</h4>
+        
+        <div class="figure-links">
+          <!-- button for figure 1 -->
+          <button class="figure-link" id="button-hop-clouds" onclick="showFigure('hop-clouds')">
+            <i class="fas fa-cube"></i>
+            <div>
+
+              <strong>Figure 1</strong>
+              <span>3D view of the 40 HOP clouds.</span>
+
+            </div>
+          </button>
+          
+          <!-- container for figure 1 -->
+          <div id="hop-clouds" class="figure-container">
+            <div class="figure-content">
+              <button class="back-button" onclick="closeFigure('hop-clouds')">
+                Close
+              </button>
+              
+              <h4>Figure 1: 3D view of the 40 HOP clouds</h4>
+              <p>
+                Starting with a face-on view of the 40 HOP clouds, the Galactic Center is located to the right.
+                Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.
+              </p>
+              
+              <iframe src="https://lillykormann.github.io/superclouds_figures/hop_clouds/hop_clouds_surface.html" 
+                      title="HOP Clouds Interactive Figure"></iframe>
+              
+              <p>Full screen view <a href="https://lillykormann.github.io/superclouds_figures/hop_clouds/hop_clouds_surface.html" target="_blank">here</a>.</p>
+            </div>
+          </div>
+          
+          <!-- button for figure 4 -->
+          <button class="figure-link" id="button-superclouds" onclick="showFigure('superclouds')">
+            <i class="fas fa-cube"></i>
+            <div>
+
+              <strong>Figure 4</strong>
+              <span>3D view of the seven superclouds.</span>
+
+            </div>
+          </button>
+          
+          <!-- container for figure 4 -->
+          <div id="superclouds" class="figure-container">
+            <div class="figure-content">
+              <button class="back-button" onclick="closeFigure('superclouds')">
+                Close 
+              </button>
+              
+              <h4>Figure 4: 3D view of the seven superclouds</h4>
+              <p>
+                Starting with a face-on view of the seven superclouds, the Galactic Center is located to the right.
+                Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.
+              </p>
+              
+              <iframe src="https://lillykormann.github.io/superclouds_figures/superclouds/superclouds_surface.html" 
+                      title="Superclouds Interactive Figure"></iframe>
+              
+              <p>Full screen view <a href="https://lillykormann.github.io/superclouds_figures/superclouds/superclouds_surface.html" target="_blank">here</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    
+    <!-- no more need to insert footer as I moved it to footer.js -->
+     
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/figure-toggle.js"></script>
+</body>
+</html>

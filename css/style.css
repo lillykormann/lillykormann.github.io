@@ -1,0 +1,527 @@
+/* ===========================================================
+   trying to be a personal website stylesheet lilly a. kormann
+   =========================================================== */
+
+/* ===========================
+   css variables and themes
+   =========================== */
+
+:root {
+  /* colors for light theme */
+  --color-text: #000000;
+  --color-bg: #ffffff;
+  --color-primary: #be005c;
+  --color-secondary: #666;
+  --border-color: #c5c5c5;
+  
+  /* font basics */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-size-base: 1.125rem;
+  --line-height-base: 1.6;
+  
+  /* layout basics */
+  --max-main-width: 900px;
+}
+
+/* colors for dark theme */
+[data-theme="dark"] {
+  --color-text: #e8e8e8;
+  --color-bg: #1a1a1a;
+  --color-secondary: #b3b3b3;
+  --border-color: #3a3a3a;
+}
+
+/* ===========================
+   global styles
+   =========================== */
+
+/* box sizing defines border-box for all elements */
+/* this way everything stays consistent width wise */
+/* more here: https://css-tricks.com/box-sizing/ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  max-width: var(--max-main-width);
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+/* ======================================================
+   typography basics and whatever else I decide to define 
+   ====================================================== */
+
+h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin: 3rem 0 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 2rem 0 0.2rem;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+/* default links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* animated underline link style from: https://css-tricks.com/css-link-hover-effects/ */
+.link-animated {
+  position: relative;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.link-animated::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  bottom: -2px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-animated:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.link-animated:hover {
+  text-decoration: none;
+}
+
+/* ===========================
+   navigation bar choices
+   =========================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+nav .nav-left {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+  width: 100%;
+}
+
+nav .name {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--color-text);
+  width: 200px;  /* fixed width to match profile and to make sure my layout works */
+}
+
+nav .name:hover {
+  color: var(--color-primary);
+}
+
+/* this way we can also color my name in the primary color when selected */
+nav .name.active {
+  color: var(--color-text);
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1rem;  /* 3rem total gap, 2rem from parent, this way the pages align with the about me text*/
+}
+
+/* navigation link for extra pages */
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* active page styling, I want the curretnly selected on to be the primary color */
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  color: var(--color-primary);
+}
+
+/* ===========================
+   profile section on homepage
+   =========================== */
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* contact details */
+.profile-details {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.profile-details > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.profile-details .pronouns {
+  color: var(--color-secondary);
+}
+
+.profile-details i {
+  width: 16px;
+  color: var(--color-text);
+}
+
+/* ===========================
+   publications
+   =========================== */
+
+.publication {
+  margin-bottom: 2rem;
+}
+
+.publication-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  margin-top: 3.5rem;
+}
+
+.publication-authors {
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.publication-authors-large {
+  color: var(--color-secondary);
+  font-size: var(--font-size-base);
+  margin-bottom: 0.3rem;
+}
+
+.publication-text {
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  margin-bottom: 0.25rem;
+}
+
+/* clickable research heading */
+section a {
+  text-decoration: none;
+}
+
+section a h2 {
+  color: var(--color-text);
+}
+
+section a:hover h2 {
+  color: var(--color-primary);
+}
+
+/* ===========================
+   research page
+   =========================== */
+
+article {
+  margin: 3rem 0;
+}
+
+/* interactive figure links */
+.figure-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.figure-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 2px solid var(--color-secondary);
+  border-radius: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: var(--color-bg);
+  width: 100%;
+  text-align: left;
+}
+
+.figure-link:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(190, 0, 92, 0.05);
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+[data-theme="dark"] .figure-link:hover {
+  background-color: rgba(255, 107, 157, 0.1);
+}
+
+.figure-link i {
+  font-size: 2rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.figure-link div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.figure-link strong {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.figure-link span {
+  font-size: 0.95rem;
+  color: var(--color-secondary);
+}
+
+.figure-link.hidden {
+  display: none;
+}
+
+/* ===========================
+   footer
+   =========================== */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin-top: 4rem;
+  border-top: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* footer social icons larger than default */
+.footer-follow a {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+.footer-follow a:first-child {
+  margin-left: 0;
+}
+
+.footer-follow a:hover {
+  color: var(--color-primary);
+}
+
+/* ============================
+   responsive design for mobile
+   ============================ */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* nav-left as flex to make my header wishes come true */
+  nav .nav-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  /* top row: name stays on left */
+  nav .name {
+    width: auto;
+    white-space: nowrap;
+    font-size: 1.6rem;
+  }
+
+  /* links wrap below on their own row */
+  nav .nav-links {
+    justify-content: left;
+    margin-left: 0;
+    gap: 2rem;
+  }
+
+  /* toggle button stays in top right corner */
+  .theme-toggle {
+    align-self: flex-start;
+  }
+
+  /* mobile styles one shall not touch */
+  .profile-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ===========================
+   interactive figure containers
+   =========================== */
+
+.figure-container {
+  display: none;
+  margin: 0rem 0;
+}
+
+.figure-container.active {
+  display: block;
+}
+
+.figure-content {
+  padding: 1.5rem;
+  border: 2px solid var(--color-secondary);
+  border-radius: 8px;
+  background: var(--color-bg);
+  margin-bottom: 1rem;
+}
+
+.figure-content iframe {
+  width: 100%;
+  height: 70vh;
+  border: 2px solid var(--color-text);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.back-button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.figure-link.hidden {
+  display: none;
+}
+
+/* ===========================
+   buttons for html figures
+   =========================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: opacity 0.3s;
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}

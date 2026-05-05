@@ -70,6 +70,12 @@ h2 {
   border-bottom: 2px solid var(--color-secondary);
 }
 
+h2.no-rule {
+  border-bottom: none;
+  margin: 3rem 0 -1rem;
+}
+
+
 h3 {
   font-weight: 600;
   font-size: 1.5rem;

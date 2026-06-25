@@ -3,7 +3,7 @@
     "title": "The Superclouds of the Local Milky Way",
     "url": "https://www.aanda.org/articles/aa/full_html/2026/02/aa56469-25/aa56469-25.html",
     "authors": "Kormann et al. (2026), accepted for publication in A&A",
-    "description": "Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel structures in the local \\(\\sim\\)5 kpc\\(^2\\), five of which were previously unknown. These findings establish a new framework for understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and likely in galaxies like the Milky Way.<br><br>Interactive figures are available for the <a href=\"publications.html#hop-clouds\">HOP clouds</a>, as well as the <a href=\"publications.html#superclouds\">superclouds</a>.",
+    "description": "Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel structures in the local ~5 kpc\\(^2\\), five of which were previously unknown. These findings establish a new framework for understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and likely in galaxies like the Milky Way.<br><br>Interactive figures are available for the <a href=\"publications.html#hop-clouds\">HOP clouds</a>, as well as the <a href=\"publications.html#superclouds\">superclouds</a>.",
     "date": "2026-02",
     "type": "first-author"
     },
@@ -11,7 +11,7 @@
   "title": "A New Gaia Census of OB Associations within 1 kpc",
   "url": "https://academic.oup.com/mnras/article/549/1/stag853/8672579?login=false",
   "authors": "Quintana et al. (2026), accepted for publication in MNRAS",
-  "description": "A complete census of ∼25,000 O- and B-type stars within 1 kpc of the Sun is used to produce a highly-reliable catalogue of 56 OB associations using the HDBSCAN clustering algorithm, increasing the number of known OB associations by a factor of two within this volume. The locations of these OB associations are compared with the local superclouds and other features in the solar neighborhood to discuss the implications for star formation.",
+  "description": "A complete census of ~25,000 O- and B-type stars within 1 kpc of the Sun is used to produce a highly-reliable catalogue of 56 OB associations using the HDBSCAN clustering algorithm, increasing the number of known OB associations by a factor of two within this volume. The locations of these OB associations are compared with the local superclouds and other features in the solar neighborhood to discuss the implications for star formation.",
   "date": "2026-05",
   "type": "co-author"
 }

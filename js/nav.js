@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="index.html" class="name">Lilly Kormann</a>
         <div class="nav-links">
           <a href="research.html" class="nav-link">Research</a>
+          <a href="publications.html" class="nav-link">Publications</a>
           <a href="about.html" class="nav-link">About</a>
         </div>
       </div>

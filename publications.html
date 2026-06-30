@@ -7,6 +7,14 @@
   <title>Lilly Kormann - Publications</title>
   <meta name="author" content="Lilly A. Kormann" />
   
+  <!-- avoid the annoying theme flashing-->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <link rel="icon" type="image/png" href="images/star_32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -41,7 +49,7 @@
       <h3 class="publications" id="first-author" style="margin-top: 3rem;">First-Author Papers</h3>
 
       <h3><a href="https://www.aanda.org/articles/aa/full_html/2026/02/aa56469-25/aa56469-25.html" target="_blank">The Superclouds of the Local Milky Way</a></h3>
-      <div class="publication-authors">Kormann et al. (2026), accepted for publication in A&A</div>
+      <div class="publication-authors" id="kormann-2026">Kormann et al. (2026), accepted for publication in A&A</div>
 
       <p> 
         Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel 

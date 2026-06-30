@@ -7,6 +7,14 @@
   <title>Lilly Kormann - About Me</title>
   <meta name="author" content="Lilly A. Kormann" />
   
+  <!-- avoid the annoying theme flashing-->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <link rel="icon" type="image/png" href="images/star_32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">

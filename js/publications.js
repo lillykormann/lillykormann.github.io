@@ -38,11 +38,21 @@ function renderFigures(pub) {
   `;
 }
 
+function figuresListSentence(pub) {
+  if (!pub.figures || !pub.figures.length) return '';
+
+  const links = pub.figures.map(fig => `the <a href="pages/publications.html#${fig.id}">${fig.shortName}</a>`);
+  const list = links.length > 1
+    ? links.slice(0, -1).join(', ') + ', as well as ' + links[links.length - 1]
+    : links[0];
+
+  return `<br><br>Interactive figures are available for ${list}.`;
+
+}
+
 function renderPublicationEntry(pub, showFigures) {
   const figuresHtml = showFigures ? renderFigures(pub) : '';
-  const figuresNote = (!showFigures && pub.figures && pub.figures.length)
-    ? ` <a href="pages/publications.html#${pub.id}">View interactive figures &rarr;</a>`
-    : '';
+  const figuresNote = showFigures ? '' : figuresListSentence(pub);
 
   return `
     <div class="publication" id="${pub.id}">
@@ -55,6 +65,7 @@ function renderPublicationEntry(pub, showFigures) {
     </div>
   `;
 }
+
 
 async function loadPublications(containerId, limit = null) {
   const pubs = await fetchPublications();

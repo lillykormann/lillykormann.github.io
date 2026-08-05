@@ -11,6 +11,7 @@
       {
         "id": "hop-clouds",
         "number": 1,
+        "shortName": "HOP clouds",
         "label": "3D view of the 40 HOP clouds.",
         "title": "Figure 1: 3D view of the 40 HOP clouds",
         "caption": "Starting with a face-on view of the 40 HOP clouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",
@@ -19,6 +20,7 @@
       {
         "id": "superclouds",
         "number": 4,
+        "shortName": "superclouds",
         "label": "3D view of the seven superclouds.",
         "title": "Figure 4: 3D view of the seven superclouds",
         "caption": "Starting with a face-on view of the seven superclouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",

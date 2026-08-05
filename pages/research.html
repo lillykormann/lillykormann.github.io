@@ -15,9 +15,9 @@
     })();
   </script>
 
-  <link rel="icon" type="image/png" href="images/star_32x32.png">
+  <link rel="icon" type="image/png" href="../images/favicon/star_32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <style>
     article p {
@@ -41,8 +41,8 @@
 
 <script>
   const switcherCaptions = [
-    "Full sky projection of the seven superclouds of the local Milky Way.",
-    "Full sky projection of the superclumps associated with the superclouds of the local Milky Way."
+    "Full-sky projection of the seven superclouds of the local Milky Way, centered on the Galactic Center.",
+    "Full-sky projection of the superclumps associated with the superclouds of the local Milky Way, \ncentered on the Galactic Center."
   ];
 
   function switchImage(index) {
@@ -68,9 +68,44 @@
     </p>
 
     <div class="pub-nav">
-      <a href="publications.html#first-author" class="pub-nav-button">First-Author Papers</a>
-      <a href="publications.html#co-author" class="pub-nav-button">Co-Authored Papers</a>
+      <a href="../publications.html#first-author" class="pub-nav-button">First-Author Papers</a>
+      <a href="../publications.html#co-author" class="pub-nav-button">Co-Authored Papers</a>
     </div>
+
+  <p>
+
+    </article>
+
+    <article style="display: none;">
+
+    The full-sky projections below show the seven superclouds of the local Milky Way, structures first identified in  
+    <a href="../pages/publications.html#kormann-2026">Kormann et al. (2026)</a>. Together, they trace the large-scale 
+    organization of the interstellar medium in the solar neighborhood.
+    </p>
+    
+    <!-- full sky switcher -->
+    <div class="sky-switcher">
+      <figure class="switcher-images">
+        <img src="../images/science/fullsky_superclouds_transparent.png" class="active"
+             alt="Full-sky view of superclouds in galactic coordinates, centered on the Galactic Center.">
+        <img src="../images/science/fullsky_superclumps_transparent.png"
+             alt="Full-sky view of superclumps in galactic coordinates, centered on the Galactic Center.">
+        <figcaption id="switcher-caption">
+          Full-sky projection of the seven superclouds of the local Milky Way, centered on the Galactic Center.
+        </figcaption>
+      </figure>
+      <div class="switcher-dots">
+        <button class="switcher-dot active" onclick="switchImage(0)"></button>
+        <button class="switcher-dot" onclick="switchImage(1)"></button>
+      </div>
+    </div>
+
+    <p>
+      A closer look reveals that the densest regions of each supercloud are concentrated along the supercloud spines, 
+      we call them superclumps and the focus of Kormann et al. (in prep.). Most superclumps coincide with known star-forming regions, supporting the idea that 
+      the superclouds and superclumps play a role in shaping where stars form.
+    </p>
+
 
     </article>
     
@@ -78,9 +113,9 @@
      
   </main>
 
-  <script src="js/nav.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/theme-toggle.js"></script>
-  <script src="js/figure-toggle.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/theme-toggle.js"></script>
+  <script src="../js/figure-toggle.js"></script>
 </body>
 </html>

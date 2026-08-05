@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Lilly Kormann - CV</title>
+  <meta name="author" content="Lilly A. Kormann" />
+  
+  <!-- avoid the annoying theme flashing-->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="../images/favicon/star_32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- latex -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- pdf.js -->                                                                                  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script> 
+
+  <meta property="og:url" content="https://lillykormann.github.io/cv.html" />                                        
+  <meta property="og:type" content="website" />                              
+  <meta property="og:title" content="Lilly Kormann - CV">
+  <meta property="og:description" content="CV of Lilly A. Kormann, Astrophysics PhD Student">
+
+</head>
+
+<body>
+  <main>
+
+    <!-- no more need to insert nav as I moved it to nav.js -->
+    
+    <article>
+      <h3 class="text-after">Curriculum Vitae</h3>
+      My current CV can be downloaded <a href="../files/cv/cv_kormann_08_2026.pdf" download><i></i> here</a> or be viewed below.
+
+      <!-- <a href="../files/cv_kormann_08_2026.pdf" class="button" target="_blank"><i class="fa-solid fa-eye"></i> View CV</a> -->
+      <!-- <iframe src="../files/cv/cv_kormann_08_2026.pdf" class="cv-embed" title="Curriculum Vitae">          
+        <p>Your browser doesn't support embedded PDFs. <a href="../files/cv/cv_kormann_08_2026.pdf" target="_blank"></a>.</p>                                                                          
+      </iframe> -->
+      <p></p>
+      <div id="cv-container" class="cv-container"></div> 
+
+      <!-- <a href="../files/cv_kormann_08_2026.pdf" class="button" download><i class="fa-solid fa-download"></i> Download CV</a>  -->
+      
+      </article>
+      
+      <!-- no more need to insert footer as I moved it to footer.js -->
+     
+  </main>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/theme-toggle.js"></script>
+
+  <script>                                                                                         
+      pdfjsLib.GlobalWorkerOptions.workerSrc =                                                       
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';                  
+                                                                                                     
+      async function renderCV() {
+        const container = document.getElementById('cv-container');
+        const pdf = await pdfjsLib.getDocument('../files/cv/cv_kormann_08_2026.pdf').promise;
+
+        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+          const page = await pdf.getPage(pageNum);
+          const baseScale = container.clientWidth / page.getViewport({ scale: 1 }).width;
+          const displayViewport = page.getViewport({ scale: baseScale });
+          const renderViewport = page.getViewport({ scale: baseScale * Math.max(window.devicePixelRatio, 2) });
+
+          // wrapper holds canvas + annotation layer stacked
+          const wrapper = document.createElement('div');
+          wrapper.style.position = 'relative';
+          wrapper.style.width = '100%';
+          wrapper.style.height = displayViewport.height + 'px';
+          container.appendChild(wrapper);
+
+          const canvas = document.createElement('canvas');
+          canvas.width = renderViewport.width;
+          canvas.height = renderViewport.height;
+          canvas.style.position = 'absolute';
+          canvas.style.width = '100%';
+          canvas.style.height = '100%';
+          wrapper.appendChild(canvas);
+
+          await page.render({ canvasContext: canvas.getContext('2d'), viewport: renderViewport }).promise;
+
+          // clickable links                                                                                                
+          const annotations = await page.getAnnotations();                                                                  
+          annotations
+            .filter(a => a.subtype === 'Link' && a.url)                                                                     
+            .forEach(annotation => {
+              const [x1, y1, x2, y2] = displayViewport.convertToViewportRectangle(annotation.rect);
+              const link = document.createElement('a');                                                                     
+              link.href = annotation.url;
+              link.target = '_blank';                                                                                       
+              link.rel = 'noopener noreferrer';
+              link.style.position = 'absolute';                                                                             
+              link.style.left   = Math.min(x1, x2) + 'px';
+              link.style.top    = Math.min(y1, y2) + 'px';                                                                  
+              link.style.width  = Math.abs(x2 - x1) + 'px';                                                                 
+              link.style.height = Math.abs(y2 - y1) + 'px';
+              wrapper.appendChild(link);                                                                                    
+            });  
+        }
+      }
+
+    renderCV();
+                                                                                   
+  </script> 
+
+</body>
+</html>

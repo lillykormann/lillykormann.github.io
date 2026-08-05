@@ -1,18 +1,47 @@
 [
-    {
+  {
+    "id": "kormann-2026",
     "title": "The Superclouds of the Local Milky Way",
     "url": "https://www.aanda.org/articles/aa/full_html/2026/02/aa56469-25/aa56469-25.html",
-    "authors": "Kormann et al. (2026), accepted for publication in A&A",
-    "description": "Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel structures in the local ~5 kpc\\(^2\\), five of which were previously unknown. These findings establish a new framework for understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and likely in galaxies like the Milky Way.<br><br>Interactive figures are available for the <a href=\"publications.html#hop-clouds\">HOP clouds</a>, as well as the <a href=\"publications.html#superclouds\">superclouds</a>.",
+    "authors": "Kormann et al. (2026), published and <a href=\"https://www.aanda.org/2026-highlights/3152\" target=\"_blank\">highlighted</a> in A&A",
+    "description": "Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel structures in the local ~5 kpc\\(^2\\), five of which were previously unknown. These findings establish a new framework for understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and likely in galaxies like the Milky Way.",
     "date": "2026-02",
-    "type": "first-author"
-    },
+    "type": "first-author",
+    "figures": [
+      {
+        "id": "hop-clouds",
+        "number": 1,
+        "label": "3D view of the 40 HOP clouds.",
+        "title": "Figure 1: 3D view of the 40 HOP clouds",
+        "caption": "Starting with a face-on view of the 40 HOP clouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",
+        "iframe": "https://lillykormann.github.io/superclouds_figures/hop_clouds/hop_clouds_surface.html"
+      },
+      {
+        "id": "superclouds",
+        "number": 4,
+        "label": "3D view of the seven superclouds.",
+        "title": "Figure 4: 3D view of the seven superclouds",
+        "caption": "Starting with a face-on view of the seven superclouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",
+        "iframe": "https://lillykormann.github.io/superclouds_figures/superclouds/superclouds_surface.html"
+      }
+    ]
+  },
   {
-  "title": "A New Gaia Census of OB Associations within 1 kpc",
-  "url": "https://academic.oup.com/mnras/article/549/1/stag853/8672579?login=false",
-  "authors": "Quintana et al. (2026), accepted for publication in MNRAS",
-  "description": "A complete census of ~25,000 O- and B-type stars within 1 kpc of the Sun is used to produce a highly-reliable catalogue of 56 OB associations using the HDBSCAN clustering algorithm, increasing the number of known OB associations by a factor of two within this volume. The locations of these OB associations are compared with the local superclouds and other features in the solar neighborhood to discuss the implications for star formation.",
-  "date": "2026-05",
-  "type": "co-author"
-}
+    "id": "quintana-2026",
+    "title": "A New Gaia Census of OB Associations within 1 kpc",
+    "url": "https://academic.oup.com/mnras/article/549/1/stag853/8672579?login=false",
+    "authors": "Quintana et al. (2026), published in MNRAS",
+    "description": "A complete census of ~25,000 O- and B-type stars within 1 kpc of the Sun is used to produce a highly-reliable catalogue of 56 OB associations using the HDBSCAN clustering algorithm, increasing the number of known OB associations by a factor of two within this volume. The locations of these OB associations are compared with the local superclouds and other features in the solar neighborhood to discuss the implications for star formation.",
+    "date": "2026-05",
+    "type": "co-author"
+  },
+  {
+    "id": "kormann-2026b",
+    "title": "The Superclumps of the Local Milky Way",
+    "url": "https://lillykormann.github.io/pages/publications.html",
+    "authors": "Kormann et al. in prep., to be submitted to A&A",
+    "description": "A closer look at the densest regions of the superclouds reveals that they are concentrated along the supercloud spines, forming smaller, more compact structures we call superclumps. Most superclumps coincide with known star-forming regions, supporting the idea that the superclouds and superclumps play a role in shaping where stars form.",
+    "date": "2026-08",
+    "type": "first-author"
+  }
 ]

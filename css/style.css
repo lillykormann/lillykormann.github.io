@@ -85,7 +85,9 @@ h3 {
 h3.publications {
   font-size: 1.6rem;
   margin: 2rem 0 -1.0rem;
+  scroll-margin-top: 6rem;
 }
+
 
 h3.text-after {
   font-size: 1.6rem;
@@ -287,7 +289,9 @@ nav .nav-links {
 
 .publication {
   margin-bottom: 2rem;
+  scroll-margin-top: 6rem;
 }
+
 
 .publication-title {
   font-weight: 700;

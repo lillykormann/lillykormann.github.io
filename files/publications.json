@@ -36,14 +36,6 @@
     "description": "A complete census of ~25,000 O- and B-type stars within 1 kpc of the Sun is used to produce a highly-reliable catalogue of 56 OB associations using the HDBSCAN clustering algorithm, increasing the number of known OB associations by a factor of two within this volume. The locations of these OB associations are compared with the local superclouds and other features in the solar neighborhood to discuss the implications for star formation.",
     "date": "2026-05",
     "type": "co-author"
-  },
-  {
-    "id": "kormann-2026b",
-    "title": "The Superclumps of the Local Milky Way",
-    "url": "https://lillykormann.github.io/pages/publications.html",
-    "authors": "Kormann et al. in prep., to be submitted to A&A",
-    "description": "A closer look at the densest regions of the superclouds reveals that they are concentrated along the supercloud spines, forming smaller, more compact structures we call superclumps. Most superclumps coincide with known star-forming regions, supporting the idea that the superclouds and superclumps play a role in shaping where stars form.",
-    "date": "2026-08",
-    "type": "first-author"
   }
+
 ]

@@ -1,0 +1,32 @@
+[
+{
+  "id": "2026-kormann-ista",
+  "type": "Talk",
+  "title": "Connecting Superclouds and Local Star-Forming Regions",
+  "venue": "ISTA-DoA Wienerwald Astronomy Symposium",
+  "venueUrl": "https://astro.univie.ac.at/en/ista-ifa-wienerwald-astronomy-symposium-2026/",
+  "date": "12.06.2026",
+  "description": "An internal density analsyis of the local superclouds, highlighting how this connects to star-forming regions, and what it implies for the origin of star formation sites in the solar neighborhood.",
+  "pdf": "../files/talks/2026_kormann_ista_public.pdf"
+},
+{
+  "id": "2026-kormann-oegaa",
+  "type": "Talk",
+  "title": "The Superclouds of the Local Milky Way",
+  "venue": "Austrian Early Career Conference",
+  "venueUrl": "https://www.oegaa.at/AECC/",
+  "date": "25.02.2026",
+  "description": "An overview of the recently discovered local superclouds and their properties, including a preview of current work on the interior density distribution.",
+  "pdf": "../files/talks/2026_kormann_oegaa_public.pdf"
+},
+{
+  "id": "2026-kormann-stellarorigins",
+  "type": "Poster",
+  "title": "The Superclouds of the Local Milky Way",
+  "venue": "Stellar Origins",
+  "venueUrl": "https://stellarorigins2025.univie.ac.at/",
+  "date": "15.09.2025",
+  "description": "An overview of the recently discovered local superclouds and their properties.",
+  "pdf": "../files/poster/2026_kormann_stellarorigins.pdf"
+}
+]

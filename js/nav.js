@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="nav-links">
           <a href="${root}pages/research.html" class="nav-link">Research</a>
           <a href="${root}pages/publications.html" class="nav-link">Publications</a>
+          <a href="${root}pages/talks.html" class="nav-link">Talks</a>
           <a href="${root}pages/about.html" class="nav-link">About</a>
         </div>
       </div>

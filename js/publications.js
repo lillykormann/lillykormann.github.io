@@ -57,7 +57,7 @@ function renderPublicationEntry(pub, showFigures) {
   return `
     <div class="publication" id="${pub.id}">
       <div class="publication-title">
-        <a href="${pub.url}" target="_blank">${pub.title}</a>
+        <a href="${pub.url}" target="_blank">${pub.title.replace(/\n/g, '<br>')}</a>
       </div>
       <div class="publication-authors">${pub.authors}</div>
       <div class="publication-text"><p>${pub.description}${figuresNote}</p></div>

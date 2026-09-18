@@ -7,6 +7,8 @@ async function fetchPublications() {
 function renderFigures(pub) {
   if (!pub.figures || !pub.figures.length) return '';
 
+  const heading = pub.figures.length === 1 ? 'Interactive Figure' : 'Interactive Figures';
+
   const items = pub.figures.map(fig => `
     <button class="figure-link" id="button-${fig.id}" onclick="showFigure('${fig.id}')">
       <i class="fas fa-cube"></i>
@@ -32,7 +34,7 @@ function renderFigures(pub) {
 
   return `
     <section>
-      <h4>Interactive Figures</h4>
+      <h4>${heading}</h4>
       <div class="figure-links">${items}</div>
     </section>
   `;
@@ -42,13 +44,16 @@ function figuresListSentence(pub) {
   if (!pub.figures || !pub.figures.length) return '';
 
   const links = pub.figures.map(fig => `the <a href="pages/publications.html#${fig.id}">${fig.shortName}</a>`);
-  const list = links.length > 1
-    ? links.slice(0, -1).join(', ') + ', as well as ' + links[links.length - 1]
-    : links[0];
+
+  if (links.length === 1) {
+    return `<br><br>An interactive figure is available for ${links[0]}.`;
+  }
+
+  const list = links.slice(0, -1).join(', ') + ', as well as ' + links[links.length - 1];
 
   return `<br><br>Interactive figures are available for ${list}.`;
-
 }
+
 
 function renderPublicationEntry(pub, showFigures) {
   const figuresHtml = showFigures ? renderFigures(pub) : '';

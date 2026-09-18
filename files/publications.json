@@ -44,6 +44,17 @@
     "authors": "Kormann et al. in prep. · submitted to A&A",
     "description": "A closer look at the densest regions of the superclouds reveals that they are concentrated along the supercloud spines, forming smaller, more compact structures we call superclumps. Most superclumps coincide with known star-forming regions, supporting the idea that the superclouds and superclumps play a role in the distribution of star-forming regions.",
     "date": "2026-08",
-    "type": "first-author"
+    "type": "first-author",
+    "figures": [
+      {
+        "id": "superclumps",
+        "number": 1,
+        "shortName": "superclumps",
+        "label": "3D view of the superclumps.",
+        "title": "Figure 1: 3D view of the superclumps",
+        "caption": "Starting with a face-on view of the superclumps, the Galactic Center is located to the right. Each superclumps is assigned the corresponding supercloud color, the Sun is represented by the yellow dot in the center.",
+        "iframe": "https://lillykormann.github.io/superclouds_figures/superclumps/t9_n2000_surface.html"
+      }
+    ]
   }
 ]

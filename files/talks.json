@@ -1,5 +1,16 @@
 [
   {
+  "id": "2026-kormann-ii8",
+  "type": "Talk",
+  "title": "Bridging Scales (Again): From Superclouds to Star-Forming Regions",
+  "venue": "Interstellar Institute 8",
+  "venueUrl": "https://interstellarinstitute.org/programs/II8/ii8.html",
+  "date": "28.09.2026",
+  "description": "",
+  "pdf": "../files/talks/2026_kormann_ii8_public.pdf"
+},
+
+  {
   "id": "2026-kormann-starformationfields",
   "type": "Talk",
   "title": "Bridging Scales: From Superclouds to Star-Forming Regions",

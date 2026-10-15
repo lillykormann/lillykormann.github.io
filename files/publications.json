@@ -24,7 +24,8 @@
         "label": "3D view of the superclumps.",
         "title": "Figure 1: 3D view of the superclumps",
         "caption": "Starting with a face-on view of the superclumps, the Galactic Center is located to the right. Each superclump is assigned the corresponding supercloud color, the Sun is represented by the yellow dot in the center.",
-        "iframe": "https://lillykormann.github.io/superclouds_figures/superclumps/t9_n2000_surface.html"
+        "iframe": "https://lillykormann.github.io/superclouds_figures/oviz/superclumps_surface_oviz.html?mode=focus#t=0&x=1zPYxBDsIgEEXvMmsggqKB20zbEScZpSkNlTS9u6ELVz95P-_tUJk2iDvMuVDficuKn5EgXp0LxnuroOEG0Rr_uNyCUzDzOr4gamu8D_buj0MBvzFR6YGEgt-mT6BzpUWwdV658CAE8YlSqDtJ8oByOgtP_-MH"
+
       }
     ]
   },
@@ -53,8 +54,8 @@
         "label": "3D view of the 40 HOP clouds.",
         "title": "Figure 1: 3D view of the 40 HOP clouds",
         "caption": "Starting with a face-on view of the 40 HOP clouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",
-        "iframe": "https://lillykormann.github.io/superclouds_figures/hop_clouds/hop_clouds_surface.html"
-      },
+        "iframe": "https://lillykormann.github.io/superclouds_figures/oviz/hop_clouds_surface_oviz.html?mode=focus#t=0&x=1zPYxBDsIgEEXvMmsggqKB20zbEScZpSkNlTS9u6ELVz95P-_tUJk2iDvMuVDficuKn5EgXp0LxnuroOEG0Rr_uNyCUzDzOr4gamu8D_buj0MBvzFR6YGEgt-mT6BzpUWwdV658CAE8YlSqDtJ8oByOgtP_-MH"
+},
       {
         "id": "superclouds",
         "number": 4,
@@ -62,7 +63,7 @@
         "label": "3D view of the seven superclouds.",
         "title": "Figure 4: 3D view of the seven superclouds",
         "caption": "Starting with a face-on view of the seven superclouds, the Galactic Center is located to the right. Each cloud is assigned a distinct color, the Sun is represented by the yellow dot in the center.",
-        "iframe": "https://lillykormann.github.io/superclouds_figures/superclouds/superclouds_surface.html"
+        "iframe": "https://lillykormann.github.io/superclouds_figures/oviz/superclouds_surface_oviz.html?mode=focus#t=0&x=1zPYxBDsIgEEXvMmsggqKB20zbEScZpSkNlTS9u6ELVz95P-_tUJk2iDvMuVDficuKn5EgXp0LxnuroOEG0Rr_uNyCUzDzOr4gamu8D_buj0MBvzFR6YGEgt-mT6BzpUWwdV658CAE8YlSqDtJ8oByOgtP_-MH"
       }
     ]
   } 

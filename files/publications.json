@@ -2,8 +2,8 @@
   {
     "id": "liu-2026",
     "title": "The Fading Hierarchy of Galactic Open Clusters",
-    "url": "https://arxiv.org/pdf/2609.09122",
-    "authors": "Liu et al. (2026) · submitted to A&A",
+    "url": "https://doi.org/10.1051/0004-6361/202662976",
+    "authors": "Liu et al. (2026) · published in A&A",
     "description": "Using the two-point correlation function, the spatial and kinematic clustering of open clusters in the solar neighborhood is traced across age, mass, and survey volume. The youngest clusters retain the fractal structure of their natal molecular clouds, but this hierarchy fades within about 100 Myr, with small-scale correlations disappearing faster than large-scale ones.",
     "date": "2026-09",
     "type": "co-author"
@@ -32,7 +32,7 @@
   {
     "id": "quintana-2026",
     "title": "A New Gaia Census of OB Associations within 1 kpc",
-    "url": "https://academic.oup.com/mnras/article/549/1/stag853/8672579?login=false",
+    "url": "https://doi.org/10.1093/mnras/stag853",
     "authors": "Quintana et al. (2026) · published in MNRAS",
     "description": "A complete census of ~25,000 O- and B-type stars within 1 kpc of the Sun yields a highly reliable catalogue of 56 OB associations, identified with HDBSCAN, doubling the number known in this volume. Their locations are compared with the local superclouds and other nearby structures to discuss the implications for star formation.",
     "date": "2026-05",
@@ -41,7 +41,7 @@
   {
     "id": "kormann-2026",
     "title": "The Superclouds of the Local Milky Way",
-    "url": "https://www.aanda.org/articles/aa/full_html/2026/02/aa56469-25/aa56469-25.html",
+    "url": "https://doi.org/10.1051/0004-6361/202556469",
     "authors": "Kormann et al. (2026) · published and <a href=\"https://www.aanda.org/2026-highlights/3152\" target=\"_blank\">highlighted</a> in A&A",
     "description": "Focusing on the largest scales in Gaia-based 3D dust maps, we find a pattern of seven highly elongated, mostly parallel structures in the local ~5 kpc\\(^2\\), five of which were previously unknown. These findings establish a new framework for understanding how large-scale Galactic structures shape the conditions for star formation in the solar vicinity, and likely in galaxies like the Milky Way.",
     "date": "2026-02",
